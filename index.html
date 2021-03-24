@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>HTML/CSS App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+      
+      :root {
+        --mc-scale-0: 0rem;
+        --mc-scale-1: 0.4rem;
+        --mc-scale-2: 0.8rem;
+        --mc-scale-3: 1.2rem;
+        --mc-scale-4: 1.6rem;
+        --mc-scale-5: 1.8rem;
+        --mc-scale-6: 2rem;
+        --mc-scale-7: 2.2rem;
+        --mc-scale-8: 2.4rem;
+        --mc-scale-9: 3.8rem;
+        --mc-scale-10: 5.2rem;
+        --mc-scale-11: 6.6rem;
+        --mc-scale-12: 8rem;
+        --mc-scale-3-5: 1.4rem;
+      }
+
+      @media (min-width: 768px) {
+        :root {
+            --mc-scale-0: 0rem;
+            --mc-scale-1: 0.4rem;
+            --mc-scale-2: 0.8rem;
+            --mc-scale-3: 1.2rem;
+            --mc-scale-4: 1.6rem;
+            --mc-scale-5: 1.9rem;
+            --mc-scale-6: 2.2rem;
+            --mc-scale-7: 2.5rem;
+            --mc-scale-8: 2.8rem;
+            --mc-scale-9: 4.3rem;
+            --mc-scale-10: 5.8rem;
+            --mc-scale-11: 7.3rem;
+            --mc-scale-12: 8.8rem;
+        }
+      }
+
+      html {
+        font-size: 10px !important;
+      }
+      
+      body {
+        font-size: var(--mc-scale-4) !important;
+        font-weight: 400;
+        font-family: "Sohne", "Helvetica", "Arial", sans-serif;
+        font-variant-ligatures: none;
+        text-rendering: optimizeLegibility;
+        line-height: 1.5;
+        letter-spacing: 0.01em;
+        -webkit-font-smoothing: antialiased;
+        background-color: black;
+        color:white;
+      }
+      .mc-text-h5 {
+        font-size: var(--mc-scale-5);
+      }
+
+      h5 {
+        font-weight: 500;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      a, a:hover {
+        text-decoration: none;
+      }
+
+      .content {
+        min-height: 100vh;
+      }
+
+      .container {
+        padding: 0 16px;
+        width: 100%;
+        padding-right: 8px;
+        padding-left: 8px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .muted {
+        opacity: 0.6 !important;
+      }
+
+      .c-button {
+        padding-top: var(--mc-scale-3);
+        padding-right: var(--mc-scale-7);
+        padding-bottom: var(--mc-scale-3);
+        padding-left: var(--mc-scale-7);
+        font-size: var(--mc-scale-3);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: 500;
+        line-height: 2;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        border-radius: var(--mc-scale-3);
+        transition: background 250ms ease, box-shadow 250ms ease, opacity 250ms ease;
+        vertical-align: middle;
+        border: 0;
+        font-family: "Sohne", "Helvetica", "Arial", sans-serif;
+      }
+
+      .c-button--primary {
+        background-color: #f24462;
+      }
+
+      .c-button--secondary {
+          background: #272c33;
+      }
+
+      .c-button:not(:disabled):not(.disabled) {
+        cursor: pointer;
+      }
+
+      .c-button--primary:not(:disabled):not(.disabled):hover {
+        background: #f45c76;
+        color: #fff;
+      }
+
+      .c-button--secondary:not(:disabled):not(.disabled):hover {
+        background: #31333b;
+        color: #fff;
+      }
+
+      .c-button--full-width {
+        width: 100%;
+      }
+
+      img {
+        min-height: 600px;
+      }
+
+      p {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <body class="mc-page" id="">
+      <div class="content">
+          <div id="webview-1">
+              <div class="container">
+                <div>
+                  <img class="img-fluid" src="https://picsum.photos/1300/700" alt="Masterclass" />
+                </div>
+                <div class="d-block my-4 text-center">
+                  <h4 class="fw-bold mc-text-h5">Learn from the best.</h4>
+                  <p class="muted">Online classes taught by the world's best. Gordon Ramsay, Stephen Curry, and more.</p>
+                </div>
+                <div class="text-center">
+                  <div class="d-block my-4">
+                    <a class="c-button c-button--primary c-button--full-width" href="masterclass://home">Explore the app</a>
+                  </div>
+                  <div class="d-block my-4">
+                    <a class="c-button c-button--secondary c-button--full-width" href="masterclass://profile">Log in</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </body>
+  </body>
+</html>
